@@ -1,73 +1,85 @@
-# Student Performance Analyzer
+# 🎓 Student Performance Prediction using Machine Learning
 
-## Phase 1: Dataset Understanding
+## 📌 Project Overview
+This project analyzes student academic and behavioral data to predict final academic performance using Machine Learning models.
 
-### Dataset Overview
-- Total Rows: 395
-- Total Columns: 33
-- Target Variable: G3 (Final Grade)
+The system applies data preprocessing, exploratory data analysis, regression modeling, and performance evaluation techniques to understand factors influencing student success.
 
-### Data Types
-- Integer Columns: 16
-- Categorical (String) Columns: 17
+---
 
-### Key Observations
-- No missing values detected.
-- Dataset contains both academic and personal attributes.
-- Final grade (G3) will be used for prediction.
+## 🚀 Objectives
+- Analyze student behavioral and academic data.
+- Predict final student grades.
+- Compare Machine Learning algorithms.
+- Identify factors affecting academic performance.
 
-## Phase 3: Data Visualization
+---
 
-- Visualized grade distribution
-- Analyzed study time impact on final grades
-- Generated correlation heatmap to identify key predictors
+## 📊 Dataset
+Student Performance Dataset containing:
 
-## Phase 4: Machine Learning Model
+- Study time
+- Absences
+- Previous failures
+- Family background
+- Lifestyle attributes
+- Academic scores
 
-- Encoded categorical features
-- Split dataset into training and testing sets
-- Trained Linear Regression model
-- Evaluated using MSE and R² Score
+Target Variable:
+- **G3 — Final Grade (0–20)**
 
-### Project Goal
-To analyze student performance and build a machine learning model to predict final grades based on various factors.
+---
 
+## ⚙️ Machine Learning Workflow
 
-### Models Implemented
+### ✅ Data Preprocessing
+- Dataset cleaning
+- Feature encoding using Label Encoder
+- Train-Test Split (80/20)
 
-#### Linear Regression
-Used as a baseline regression model.
+---
+
+### 📈 Exploratory Data Analysis
+Visualizations performed:
+
+- Grade Distribution Analysis
+- Study Time vs Performance
+- Correlation Heatmap
+
+---
+
+## 🤖 Models Implemented
+
+### Linear Regression
+Baseline prediction model.
 
 Performance:
-- Mean Squared Error: **5.03**
 - R² Score: **0.75**
+- Mean Squared Error: **5.03**
 
 ---
 
-#### Random Forest Regressor
-Used to capture nonlinear relationships between features.
+### Random Forest Regressor
+Improved nonlinear prediction model.
 
 Performance:
-- Mean Squared Error: **3.48**
 - R² Score: **0.83**
-
-Random Forest showed improved prediction accuracy compared to Linear Regression.
-
----
-
-## Key Insights
-Model analysis revealed that the following factors strongly influence student performance:
-
-- Previous academic scores
-- School support
-- Family relationship quality
-- Study behavior
+- Mean Squared Error: **3.48**
 
 ---
 
-## Technologies Used
+## 🔎 Key Insights
+Feature importance analysis revealed:
 
-Programming Language:
+- Student absences strongly impact performance.
+- Previous academic failures increase risk.
+- Lifestyle and study habits influence results.
+
+---
+
+## 🛠️ Technologies Used
+
+Language:
 - Python
 
 Libraries:
@@ -84,20 +96,29 @@ Tools:
 
 ---
 
-## Project Structure
+## 📁 Project Structure
+
+Student_Performance_Analyzer/
+│
+├── data/
+│ └── student-mat.csv
+│
+├── main.py
+├── README.md
+└── .gitignore
 
 
 ---
 
-## Future Improvements
-- Student risk prediction using classification models.
-- Deployment as a web application.
-- Real-time academic performance dashboard.
+## 📌 Future Improvements
+- Student Risk Prediction System
+- Web Application Deployment
+- Interactive Dashboard
 
 ---
 
-## Author
-Jeevan H. D.
+## 👨‍💻 Author
+**Jeevan H. D.**
 
 GitHub:
 https://github.com/jeevanhd11
