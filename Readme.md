@@ -22,5 +22,12 @@
 - Analyzed study time impact on final grades
 - Generated correlation heatmap to identify key predictors
 
+## Phase 4: Machine Learning Model
+
+- Encoded categorical features
+- Split dataset into training and testing sets
+- Trained Linear Regression model
+- Evaluated using MSE and R² Score
+
 ### Project Goal
 To analyze student performance and build a machine learning model to predict final grades based on various factors.
